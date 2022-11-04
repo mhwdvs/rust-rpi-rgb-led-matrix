@@ -73,6 +73,13 @@ impl LedMatrix {
         LedCanvas { handle }
     }
 
+    /// Sets the brightness of the RGB matrix
+    pub fn set_brightness(&self, brightness: u8) {
+        unsafe {
+            ffi::led_maxtrix_set_brightness(self.handle, brightness);
+        }
+    }
+
     /// Cleanly swaps the canvas on v-sync, returning the off-screen canvas for updating.
     ///
     /// ```
