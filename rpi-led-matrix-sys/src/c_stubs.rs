@@ -51,7 +51,7 @@ extern "C" fn led_matrix_create_offscreen_canvas(_matrix: *mut CLedMatrix) -> *m
 }
 
 #[no_mangle]
-extern "C" fn led_maxtrix_set_brightness(_matrix: *mut CLedMatrix, _brightness: u8) {}
+extern "C" fn led_matrix_set_brightness(_matrix: *mut CLedMatrix, _brightness: u8) {}
 
 #[no_mangle]
 extern "C" fn led_matrix_swap_on_vsync(
