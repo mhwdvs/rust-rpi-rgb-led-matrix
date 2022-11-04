@@ -76,7 +76,7 @@ impl LedMatrix {
     /// Sets the brightness of the RGB matrix
     pub fn set_brightness(&self, brightness: u8) {
         unsafe {
-            ffi::led_maxtrix_set_brightness(self.handle, brightness);
+            ffi::led_matrix_set_brightness(self.handle, brightness);
         }
     }
 
